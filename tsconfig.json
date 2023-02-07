@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Docusaurus v2",
+  "docs": "https://v2.docusaurus.io/docs/typescript-support",
+  
+  "compilerOptions": {
+    "target": "ESnext",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM","ES2016"],
+    "noEmit": true,
+    "types": ["@docusaurus/module-type-aliases", "@docusaurus/preset-classic"],
+    "skipLibCheck": true
+  }
+}
