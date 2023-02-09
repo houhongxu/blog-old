@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: '903040380', // Usually your GitHub org/user name.
-  projectName: 'blog-docusaurus', // Usually your repo name.
+  projectName: 'blog', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -56,7 +56,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'HHX的笔记',
+        title: 'HHX的博客',
         logo: {
           alt: 'HHX LOGO',
           src: 'img/logo.svg',
@@ -128,10 +128,6 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} HHX`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
       },
     }),
 }
