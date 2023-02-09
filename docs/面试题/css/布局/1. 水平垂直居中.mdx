@@ -1,9 +1,18 @@
 # 水平垂直居中
 
-## 通过绝对定位
+## 长宽固定
+
+### 通过绝对定位
 
 ```jsx
-<div style={{ width: 200, height: 200, backgroundColor: 'gray', position: 'relative' }}>
+<div
+  style={{
+    width: 200,
+    height: 200,
+    backgroundColor: 'gray',
+    position: 'relative',
+  }}
+>
   <div
     style={{
       width: 100,
@@ -18,7 +27,14 @@
 </div>
 ```
 
-<div style={{ width: 200, height: 200, backgroundColor: 'gray', position: 'relative' }}>
+<div
+  style={{
+    width: 200,
+    height: 200,
+    backgroundColor: 'gray',
+    position: 'relative',
+  }}
+>
   <div
     style={{
       width: 100,
@@ -32,11 +48,18 @@
   ></div>
 </div>
 
-## 通过 flex
+### 通过 flex
 
 ```jsx
 <div
-  style={{ width: 200, height: 200, backgroundColor: 'gray', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+  style={{
+    width: 200,
+    height: 200,
+    backgroundColor: 'gray',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }}
 >
   <div
     style={{
@@ -49,7 +72,14 @@
 ```
 
 <div
-  style={{ width: 200, height: 200, backgroundColor: 'gray', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+  style={{
+    width: 200,
+    height: 200,
+    backgroundColor: 'gray',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }}
 >
   <div
     style={{
@@ -59,3 +89,5 @@
     }}
   ></div>
 </div>
+
+## 长宽不固定
