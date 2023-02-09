@@ -96,31 +96,19 @@ const config = {
             title: '参考',
             items: [
               {
-                label: 'react-卡颂',
+                label: '卡颂',
                 href: 'https://react.iamkasong.com',
               },
               {
-                label: 'http-山月',
-                href: 'https://q.shanyue.tech/http/',
+                label: '山月',
+                href: 'https://q.shanyue.tech',
               },
               {
-                label: 'webpack-山月',
-                href: 'https://q.shanyue.tech/engineering/',
-              },
-              {
-                label: 'webpack-山月',
-                href: 'https://q.shanyue.tech/engineering/',
-              },
-              {
-                label: 'reference-山月',
-                href: 'https://q.shanyue.tech/',
-              },
-              {
-                label: '数据结构-Carl',
+                label: 'carl',
                 href: 'https://www.programmercarl.com/',
               },
               {
-                label: '排序-bubucuo',
+                label: 'bubucuo',
                 href: 'https://space.bilibili.com/455025597',
               },
             ],
