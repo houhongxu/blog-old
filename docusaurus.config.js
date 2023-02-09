@@ -111,6 +111,10 @@ const config = {
                 label: 'bubucuo',
                 href: 'https://space.bilibili.com/455025597',
               },
+              {
+                label: '神三元',
+                href: 'https://juejin.cn/user/430664257382462',
+              },
             ],
           },
           {
