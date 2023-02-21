@@ -6,11 +6,14 @@
 
 服务器通过 referer 记录的来源来判断是否是内部域名
 
-[例如](https://i0.hdslb.com/bfs/banner/728f45f115c9b99752bb162664600a183b23c8da.png)
+例如：![](https://i0.hdslb.com/bfs/banner/728f45f115c9b99752bb162664600a183b23c8da.png)
+`https://i0.hdslb.com/bfs/banner/728f45f115c9b99752bb162664600a183b23c8da.png`
 
-## 防防盗链
+## Referrer-Policy 响应头
 
-### Referrer-Policy 响应头
+监管哪些访问来源地址会在 Referer 中发送
+
+### 防防盗链
 
 需要给网站服务器整体配置，这样网站发起的请求都不会携带 referer 请求头
 
@@ -26,6 +29,8 @@
 
 ## 应用场景
 
-项目防盗链功能 TODO
+项目防盗链功能
+
+<a href="../业务/防盗链">防盗链</a>
 
 统计 TODO
