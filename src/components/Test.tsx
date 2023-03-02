@@ -18,32 +18,8 @@ export const Test = () => {
   return (
     <div
       style={{
-        height: 200,
-        backgroundColor: 'gray',
-        display: 'flex',
+        width: '100%',
       }}
-    >
-      <div
-        style={{
-          flex: 1,
-          height: '100%',
-          backgroundColor: 'blue',
-        }}
-      ></div>
-      <div
-        style={{
-          flex: 1,
-          height: '100%',
-          backgroundColor: 'black',
-        }}
-      ></div>
-      <div
-        style={{
-          flex: 1,
-          height: '100%',
-          backgroundColor: 'green',
-        }}
-      ></div>
-    </div>
+    ></div>
   )
 }
