@@ -1,0 +1,47 @@
+# bind 与 call 与 apply
+
+## call/apply
+
+[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+
+## bind
+
+[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+
+```js
+Function.prototype.bind = function (thisArg, ...args) {
+  return (...newArgs) => this.call(thisArg, ...args, ...newArgs)
+}
+```
+
+考虑到构造函数问题
+
+```js
+// bind() 返回新的函数，该函数this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数
+Function.prototype.bind = function (thisArg, ...args) {
+  let that = this // 调用bind的原函数
+  let fn = function (...newArgs) {
+    // that是一个this绑定了thisArg的函数
+    return that.apply(
+      // this是构造函数的实例的情况。如
+      // const obj={a:1}
+      // function func(){console.log(this.a)}
+      // const BindFunc=func.bind(obj)
+      // const instance =new BindFunc()
+      // BindFunc内的this是指向obj的
+      // new之后这个this会指向instance
+      // instance中没有a属性，所以需要判断instance
+      // this就是fn的实例
+      // 直接调用时就是bind应该绑定的thisArg，new时就是fn的实例
+      this instanceof fn ? this : thisArg,
+      args.concat(newArgs)
+    )
+  }
+  fn.prototype = Object.create(that.prototype) //保证原函数self的原型对象上的属性不丢失
+  return fn
+}
+```
+
+import { Bind } from '/src/components/js/Bind'
+
+<Bind></Bind>
