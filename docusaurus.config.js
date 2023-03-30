@@ -66,9 +66,8 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: '文档',
+            label: '博客',
           },
-          { to: '/blog', label: '博客', position: 'left' },
           {
             href: 'https://github.com/903040380',
             label: 'GitHub',
@@ -85,10 +84,6 @@ const config = {
               {
                 label: '文档',
                 to: '/docs/intro',
-              },
-              {
-                label: '博客',
-                to: '/blog',
               },
             ],
           },
