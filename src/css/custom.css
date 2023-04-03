@@ -52,3 +52,8 @@
 .main-wrapper {
   display: flex;
 }
+
+/* 去除深色模式 */
+.navbar__items--right div {
+  display: none;
+}

@@ -65,13 +65,8 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
-            label: '博客',
-          },
-          {
-            href: 'https://github.com/903040380',
-            label: 'GitHub',
             position: 'right',
+            label: '博客',
           },
         ],
       },
